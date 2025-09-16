@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying Calculator App...'
-                sh 'cp calculator.py /var/www/html/'  // or wherever you want to deploy
+                sh 'mkdir -p /var/lib/jenkins/deploy && cp calculator.py /var/lib/jenkins/deploy/'  // or wherever you want to deploy
             }
         }
     }
