@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Nightwing-X1/calculator_demo.git'
+                git branch: 'main', url: 'https://github.com/simplynii/calculator_demo.git'
             }
         }
  
